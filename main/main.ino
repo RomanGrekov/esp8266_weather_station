@@ -24,11 +24,12 @@
  *
  */
 
-#include <TimeLib.h>
+#include "TimeLib.h"
+#include "OLEDDisplay.h"
 
 // Include the correct display library
 // For a connection via I2C using Wire include
-#include <Wire.h>  // Only needed for Arduino 1.6.5 and earlier
+//#include <Wire.h>  // Only needed for Arduino 1.6.5 and earlier
 #include "SSD1306.h" // alias for `#include "SSD1306Wire.h"`
 // or #include "SH1106.h" alis for `#include "SH1106Wire.h"`
 // For a connection via I2C using brzo_i2c (must be installed) include
@@ -41,7 +42,7 @@
 // #include "SH1106SPi.h"
 
 // Include the UI lib
-#include "OLEDDisplayUi.h"
+
 
 // Include custom images
 #include "images.h"
